@@ -6,9 +6,12 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody playerRb;
     Animator playerAnimator;
+    AudioSource playerAudio;
 
     [SerializeField]ParticleSystem explosionParticle;
     [SerializeField] ParticleSystem dirtparticle;
+    [SerializeField] AudioClip jumpSound;
+    [SerializeField] AudioClip crashSound;
 
     [SerializeField] float jumpForce;
     [SerializeField] float gravityModifier;
@@ -24,6 +27,7 @@ public class PlayerController : MonoBehaviour
 
         playerRb = GetComponent<Rigidbody>();
         playerAnimator = GetComponent<Animator>();
+        playerAudio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -35,6 +39,7 @@ public class PlayerController : MonoBehaviour
             isOnGround = false;
             playerAnimator.SetTrigger("Jump_trig");
             dirtparticle.Stop();
+            playerAudio.PlayOneShot(jumpSound, 1.0f);
         }
     }
 
@@ -53,6 +58,7 @@ public class PlayerController : MonoBehaviour
             playerAnimator.SetInteger("DeathType_int", 1);
             dirtparticle.Stop();
             explosionParticle.Play();
+            playerAudio.PlayOneShot(crashSound, 1.0f);
         }
     }
 }
