@@ -860,6 +860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 8968359295827436168}
+  dirtparticle: {fileID: 4943830671645824068}
   jumpForce: 600
   gravityModifier: 2
   gameOver: 0
@@ -2257,5 +2258,10 @@ PrefabInstance:
 --- !u!4 &4943830671627459604 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1419152992, guid: fb82dfb8d1c7044c69afd2486befecb3, type: 3}
+  m_PrefabInstance: {fileID: 4943830670764905076}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &4943830671645824068 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1438565936, guid: fb82dfb8d1c7044c69afd2486befecb3, type: 3}
   m_PrefabInstance: {fileID: 4943830670764905076}
   m_PrefabAsset: {fileID: 0}
