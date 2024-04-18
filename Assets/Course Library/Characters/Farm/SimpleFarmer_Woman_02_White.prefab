@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4144231887311277141}
   m_Layer: 0
   m_Name: SimpleFarmer_Woman_02_White
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,7 +111,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 3.0299156, z: 0.726574}
-  m_Center: {x: 1.8504467e-17, y: 1.5227491, z: -0.006510362}
+  m_Center: {x: 1.8504255e-17, y: 1.5227491, z: -0.006510377}
 --- !u!114 &1564728486202879754
 MonoBehaviour:
   m_ObjectHideFlags: 0
